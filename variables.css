@@ -1,0 +1,216 @@
+/* colors*/
+:root {
+  --ni-black: #2B3033;
+  --ni-medium-grey: #575757; /* use this color where normal people would use black */
+  --ni-black-half: rgba(87, 87, 87, 0.5);
+  --ni-highlight: rgb(67,134,185); /* #4386b9;*/
+  --ni-highlight-text: rgb(198, 216, 228);
+  --ni-blue: var(--ni-highlight);
+  --ni-icon-blue: #0760A4;
+  --ni-cool-blue-98: #F9FAFC;
+  --ni-cool-white: rgb(247, 247, 247); /* #F7F7F7; */
+  --ni-dark-blue: #275476;
+  --ni-dark-grey: #777B80;
+  --ni-dark-grey-half: rgba(119, 123, 128, 0.5);
+  --ni-dropdown-gray: #82878C;
+  --ni-green: #37B5AC;
+  --ni-green-quarter: #E8F7F6;
+  --ni-grey: #F0F0F0;
+  --ni-grey-backdrop: #B1B4B6;
+  --ni-gray: #777b80;
+  --ni-gray-cool-99: #d9dee1;
+  --ni-gray-cool-90: #DDE2E6;
+  --ni-gray-cool-88: #e9ebec;
+  --ni-gray-cool-88to99: linear-gradient(to right, var(--ni-gray-cool-88), var(--ni-gray-cool-99));
+  --ni-gray-cool-88to99-041: linear-gradient(to right, rgba(233,235,236, 0.41), rgba(217,222,225, 0.41));
+  --ni-gray-cool-81: #C7CCD1;
+  --ni-gray-neutral-68: rgb(169,172,175); /* #A9ACAF;*/
+  --ni-unnamed-gray: rgb(227, 227, 231); /* #e3e3e7 */
+  --ni-success: #20B25b;
+  --ni-error: #c42126;
+  --ni-warning-orange: #FF8900;
+  --ni-true-white: #FFFFFF;
+  --ni-white: white;
+  --ni-white-blue: #EBF0F5;
+  --ni-button-fill-brush: var(--ni-gray-cool-88);
+  --ni-background: #E0E0E0;
+  --ni-message-background: rgba(68, 68, 68, .95);
+  
+    /* sfp-colors */
+  --sfp-gray: var(--ni-gray, #777b80);
+  --sfp-hint-text-blue: #72A2B7;
+  
+  /* cursors */
+  --ni-cursor-default: default;
+  --ni-icon-button-cursor: var(--sfp-button-cursor-path); /* cursor when hovering over icons */
+  
+  /* scrollbar */
+  --sfp-vertical-scrollbar-width: 8px;
+  
+  /* font settings */
+  --sfp-font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --sfp-font-family-mono: 'Roboto Mono', monospace;
+  --sfp-font-family-droid: 'Droid Sans Mono', monospace;
+  --sfp-font-size-header: 14px;
+  --sfp-font-size-normal: 14px;
+  --sfp-font-size-error: 14px;
+  --sfp-font-style-error: italic;
+  
+  --sfp-highlight-color: #4384b7;
+  --sfp-highlight-text-color: white;
+  --sfp-prop-panel-padding: 13px 10px 0px 5px;
+  
+  --sfp-input-height: 22px;
+  --sfp-text-input-height: 30px;
+  --sfp-input-width: auto;
+  
+  --sfp-nounit-input-width: 105px;
+  --sfp-control-vertical-spacing: 10px;
+  
+  --sfp-input-font-size: var(--sfp-font-size-normal);
+  /* styles for the label only */
+  --sfp-input-label-color: var(--ni-medium-grey);
+  /* styles for the input field only */
+  --sfp-input-input-color: var(--ni-medium-grey);
+  --sfp-input-input-disabled-color: var(--ni-medium-grey);
+  --sfp-input-input-background: var(--ni-white);
+  --sfp-input-input-background-color: var(--ni-white);
+  --sfp-input-input-invalid-background: rgba(246, 121, 120, 1);
+  --sfp-input-input-invalid-color: black;
+  --sfp-input-disabled-opacity: 0.5;
+  --sfp-input-disabled-opacity-30: 0.3;
+  --sfp-input-disabled-opacity-80: 0.8;
+  
+  --sfp-input-input-div-flex-grow: 1;
+  
+  --sfp-dropdown-cursor: default;
+  --sfp-dropdown-color: var(--ni-medium-grey);
+  --sfp-dropdown-background: var(--ni-unnamed-gray);
+  --sfp-dropdown-hover-background: white;
+  --sfp-dropdown-active-background: var(--ni-highlight);
+  --sfp-dropdown-selected-background: var(--ni-highlight-text);
+  --sfp-graph-bezel-background: var(--ni-unnamed-gray);
+  
+  --sfp-control-border-color: #a9acaf;
+  
+  --sfp-file-selector-button-background-gray: var(--ni-unnamed-gray);
+  
+  --sfp-separator-color: var(--ni-black-half);
+  
+  --sfp-cursor-table-header-background: var(--ni-gray-cool-90);
+  --sfp-collapsible-content-overflow: hidden;
+  
+  /* sfp-titlebar */
+  --sfp-titlebar-background: var(--theme-titlebar-backround, var(--ni-blue));
+  --sfp-titlebar-color: var(--theme-titlebar-color, var(--ni-white));
+  --sfp-titlebar-height: var(--theme-titlebar-height, 30px);
+  
+  /* sfp-toolbar */
+  --sfp-toolbar-height: var(--theme-toolbar-height, 60px);
+  --sfp-toolbar-background: var(--theme-toolbar-background, var(--ni-cool-white));
+  --sfp-toolbar-color: var(--theme-toolbar-color, --ni-medium-grey);
+  
+  --sfp-toolbar-title-font-size: var(--theme-toolbar-title-font-size, 18px);
+  --sfp-toolbar-title-font-weight: var(--theme-toolbar-title-font-weight, bold);
+  
+  --sfp-toolbar-button-height: var(--theme-toolbar-button-height, 20px);
+  --sfp-toolbar-button-width: var(--theme-toolbar-button-width, 20px);
+  --sfp-toolbar-button-margin-horizontal: var(--theme-toolbar-button-margin-horizontal, 15px);
+  --sfp-toolbar-button-background: var(--theme-toolbar-button-background, transparent);
+  
+  /* sfp-properties-panel */
+  --sfp-properties-panel-width: var(--theme-properties-panel-width, 280px);
+  --sfp-properties-panel-margin-left: 15px;
+  --sfp-properties-panel-margin-right: 25px;
+  --sfp-properties-panel-background: var(--theme-properties-panel-background, var(--ni-cool-white));
+  --sfp-properties-collapsible-content-background: transparent;
+  --sfp-properties-collapsible-header-background: #ebebeb;
+  
+  --sfp-toggle-width: 40px;
+  --sfp-toggle-box-width: 20px;
+  --sfp-toggle-box-height: 20px;
+  --sfp-toggle-rail-on: var(--ni-highlight);
+  --sfp-toggle-rail-off: var(--ni-gray-neutral-68);
+  --sfp-toggle-background-on: var(--ni-highlight);
+  --sfp-toggle-background-off: var(--ni-gray-cool-88to99-041);
+  --sfp-toggle-border: 1px solid var(--ni-gray-neutral-68);
+  
+  --sfp-slider-track-height: 7px;
+  --sfp-slider-track-border: 1px solid var(--ni-gray-cool-81);
+  --sfp-slider-background-on: var(--ni-blue);
+  --sfp-slider-background-off: var(--ni-gray-cool-88to99);
+  --sfp-slider-inner-border-color: var(--ni-gray-cool-81);
+  --sfp-slider-outer-border-color: var(--ni-white);
+  --sfp-slider-arrow-width: 10px;
+  --sfp-slider-arrow-height: 10px;
+  --sfp-slider-tick-mark-height: 5px;
+  --sfp-slider-tick-mark-em-height: 8px;
+  --sfp-slider-tick-mark-color: var(--ni-gray-cool-81);
+  
+  --sfp-slider-pointer-extend: 4px;
+  --sfp-slider-pointer-arrow: 4px;
+  --sfp-slider-pointer-width: 10px;
+  --sfp-slider-pointer-shim-color: var(--ni-white);
+  --sfp-slider-pointer-border-color: var(--ni-gray-cool-81);
+  --sfp-slider-pointer-color: var(--ni-button-fill-brush);
+  
+  color: var(--ni-medium-grey);
+  
+  /* sfp run stop button */
+  --sfp-run-stop-button-width: 94px;
+  
+  /* sfp button */
+  --sfp-button-background: var(--sfp-input-input-background, white);
+  --sfp-button-color: var(--sfp-input-input-color, gray);
+  --sfp-button-border-color: var(--sfp-input-input-background, gray);
+  --sfp-button-border-width: 1px;
+  --sfp-button-hover-background: var(--sfp-input-input-background, white);
+  --sfp-button-hover-color: var(--sfp-input-input-color, gray);
+  --sfp-button-hover-border-color: var(--ni-gray-cool-81, gray);
+  --sfp-button-hover-box-shadow: 0 0 1px 1px var(--sfp-highlight-color, blue);
+  --sfp-button-active-background: var(--sfp-input-input-background, white);
+  --sfp-button-active-color: var(--sfp-input-input-color, gray);
+  --sfp-button-active-border-color: var(--ni-gray-cool-81, gray);
+  
+  /* sfp button dropdown */
+  --sfp-button-dropdown-collapser-width: 24px;
+  --sfp-button-dropdown-arrow-width: 12px;
+  --sfp-button-dropdown-color: white;
+  --sfp-button-dropdown-background: var(--ni-message-background);
+  --sfp-button-dropdown-border-color: white;
+  --sfp-button-dropdown-border-width: 2px;
+  --sfp-button-dropdown-hover-color: var(--ni-message-background);
+  --sfp-button-dropdown-hover-background: white;
+  --sfp-button-dropdown-hover-border-color: white;
+  --sfp-button-dropdown-active-color: var(--ni-message-background);
+  --sfp-button-dropdown-active-background: var(--ni-grey);
+  --sfp-button-dropdown-active-border-color: white;
+  
+  /* sfp graph settings */
+  --sfp-graph-settings-font-size: var(--sfp-input-font-size);
+  --sfp-graph-settings-width: 200px;
+  
+  /* hyperlink styles */
+  --sfp-hyperlink-text-decoration: none;
+  --sfp-hyperlink-color: var(--ni-highlight);
+  
+  /* sfp popout */
+  --sfp-popout-arrow-width: 15px;
+  --sfp-popout-icon-background: none;
+  --sfp-popout-icon-border: none;
+  --sfp-popout-content-background: var(--ni-white);
+  --sfp-popout-content-border: 1px solid var(--ni-medium-grey);
+  /* horizontal offset shifts the popout container by the specified number of pixels relative to the alignment position */
+  --sfp-popout-horizontal-offset: 0px;
+  /* vertical offset shifts the popout container by the specified number of pixels */
+  --sfp-popout-vertical-offset: 0px;
+  
+  --sfp-screencapture-table-border-color: #828790;
+  --sfp-screencapture-table-data-left-offset: 4px;
+  --sfp-screencapture-table-plot-color-background-width: 5px;
+  
+  --sfp-checkbox-background-off: var(--ni-white, white);
+  --sfp-checkbox-background-on: var(--ni-blue, darkblue);
+  --sfp-checkbox-border: 1px solid var(--ni-gray-neutral-68, gray);
+  --sfp-checkbox-size: 16px;
+}
